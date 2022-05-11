@@ -10,3 +10,14 @@ export const generateFibonacci = (n: number, arr = new Array(n - 1)) => [
   ),
   console.log("The Array is"+arr)
 ];
+
+let fibonacci = [0,1];
+    
+    function generateFibonacci(num) {
+    // starting at array index 1, and push current index + previous index to the array
+        for (let i = 1; i < num; i++) {
+            fibonacci.push(fibonacci[i] + fibonacci[i - 1]);
+        }
+        console.log(fibonacci);
+    }
+    
